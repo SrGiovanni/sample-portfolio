@@ -55,6 +55,7 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 1.55vw;
   text-shadow: 0 0 5px;
+  color: var(--secondary-color);
 }
 
 section {
@@ -86,23 +87,26 @@ section {
 }
 
 .projects {
-  width: 100%;
   flex: 4 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.projects article:first-child {
-  width: 100%;
-}
-
 .project {
+  flex: 1;
   border: 2px solid;
   margin: 10px;
 }
 
+.projects article:first-child {
+  flex-basis: 100%;
+}
+
 .contact-me article {
+  display: flex;
+  border: 5px solid;
+  padding: 20px;
   flex: 4 80%;
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */

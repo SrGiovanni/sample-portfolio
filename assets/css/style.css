@@ -101,6 +101,23 @@ section {
   flex: 1;
   border: 2px solid;
   margin: 10px;
+  position: relative;
+  height: 400px;
+  min-height: 100px;
+}
+
+#run-buddy {
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#blackjack {
+  background-image: url("../images/blackjack-deal.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .project img {
@@ -109,6 +126,15 @@ section {
   margin-right: auto;
   width: 50%;
   height: auto;
+}
+
+.project-label {
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 15px;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 22px;
 }
 
 .projects article:first-child {
@@ -123,6 +149,20 @@ section {
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+  .section-title,
+  .about-text,
+  .projects,
+  .contact-deets {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 36px;
+    border-bottom: 4px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    flex-basis: 100px;
+  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */

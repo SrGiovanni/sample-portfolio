@@ -58,6 +58,10 @@ header nav ul li a {
   color: var(--secondary-color);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
 section {
   padding: 40px;
   display: flex;
@@ -97,6 +101,14 @@ section {
   flex: 1;
   border: 2px solid;
   margin: 10px;
+}
+
+.project img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
 }
 
 .projects article:first-child {

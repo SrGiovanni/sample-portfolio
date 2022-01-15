@@ -104,17 +104,28 @@ section {
   justify-content: space-around;
 }
 
-.project {
+.projects a {
   flex: 1;
-  border: 2px solid;
   margin: 10px;
   position: relative;
-  height: 400px;
-  min-height: 100px;
+  min-height: 400px;
+  min-width: 150px;
+}
+
+.project {
+  flex-basis: 100%;
+  border: 20px solid var(--primary-color);
 }
 
 #run-buddy {
   background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#horiseon {
+  background-image: url("../images/web-metrics.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -127,24 +138,30 @@ section {
   background-position: center;
 }
 
-.project img {
+/* .project img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
   height: auto;
-}
+} */
 
 .project-label {
   background-color: var(--primary-color);
+  color: var(--secondary-color);
   position: absolute;
   bottom: 15px;
   padding: 5px;
   padding-right: 10px;
   padding-left: 22px;
+  text-shadow: 2px 2px black;
 }
 
-.projects article:first-child {
+.project-label h3 {
+  font-size: 20px;
+}
+
+.projects a:first-child {
   flex-basis: 100%;
 }
 
@@ -153,6 +170,10 @@ section {
   border: 5px solid;
   padding: 20px;
   flex: 4 80%;
+}
+
+.project:hover {
+  opacity: 0.9;
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {

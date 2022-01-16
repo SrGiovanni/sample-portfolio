@@ -8,7 +8,7 @@
   --secondary-color: #1fa612;
 }
 body {
-  background-color: #d9dcd6;
+  background-color: #fffdd0;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -104,47 +104,36 @@ section {
   justify-content: space-around;
 }
 
-.projects a {
+.project {
+  background-color: var(--primary-color);
   flex: 1;
   margin: 10px;
+  border: 20px solid var(--primary-color);
   position: relative;
-  min-height: 400px;
+  height: 400px;
+  min-height: 100px;
   min-width: 150px;
 }
 
-.project {
-  flex-basis: 100%;
-  border: 20px solid var(--primary-color);
+.project article {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
 }
 
 #run-buddy {
   background-image: url("../images/hero-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 #horiseon {
   background-image: url("../images/web-metrics.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 #blackjack {
   background-image: url("../images/blackjack-deal.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-
-/* .project img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: auto;
-} */
 
 .project-label {
   background-color: var(--primary-color);
@@ -155,6 +144,7 @@ section {
   padding-right: 10px;
   padding-left: 22px;
   text-shadow: 2px 2px black;
+  border-radius: 0 7px 7px 0;
 }
 
 .project-label h3 {
@@ -173,7 +163,23 @@ section {
 }
 
 .project:hover {
-  opacity: 0.9;
+  opacity: 0.8;
+}
+
+.contact-deets ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.contact-deets ul li {
+  margin: 10px;
+  flex: 1;
+  background-color: var(--primary-color);
+  height: 100%;
+  width: 100%;
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {

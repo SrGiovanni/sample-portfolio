@@ -12,6 +12,10 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+a {
+  color: inherit;
+}
+
 header {
   padding: 10px 20px 10px 0;
   background-color: var(--primary-color);
@@ -166,7 +170,7 @@ section {
   opacity: 0.8;
 }
 
-.contact-deets ul {
+.contact-details {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -174,8 +178,13 @@ section {
   list-style: none;
 }
 
-.contact-deets ul li {
-  margin: 10px;
+.contact-details p {
+  font-size: 30px;
+  color: var(--secondary-color);
+  text-shadow: 2px 2px black;
+  margin: 20px;
+  padding: 15px 20px;
+  text-align: center;
   flex: 1;
   background-color: var(--primary-color);
   height: 100%;
@@ -212,4 +221,7 @@ section {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+  .contact-details p {
+    flex-basis: 100%;
+  }
 }

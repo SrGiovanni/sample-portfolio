@@ -133,6 +133,10 @@ section {
   width: 100%;
 }
 
+#plugged-in {
+  background-image: url("../images/charging.jpeg");
+}
+
 #run-buddy {
   background-image: url("../images/hero-bg.jpg");
 }
